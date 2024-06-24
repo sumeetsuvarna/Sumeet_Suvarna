@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sumeet Suvarna Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Sumeet Suvarna</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#experience-section" class="nav-link"><span>Experience</span></a></li>
+	          <!-- <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li> -->
+			  <li class="nav-item"><a href="#education-section" class="nav-link"><span>Education</span></a></li>
+	          <li class="nav-item"><a href="#Skills-and-Expertise" class="nav-link"><span>Skills and Expertise</span></a></li>
+			  <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/circle-portfolio.png);background-size: 80%;">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Sumeet Suvarna</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Analytical Thinker',
+						'Data Driven',
+						'Detail Oriented'
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+						<!-- <h2>4 Years of Experience</h2> -->
+						<h3>Data Engineer</h3>
+						<h3>Data Analyst</h3>
+			            <h3>Data Scientist</h3>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="https://www.linkedin.com/in/sumeet-suvarna/" class="btn btn-white btn-outline-white py-3 px-4" target="_blank">LinkedIn</a> 
+							<a href="https://github.com/sumeetsuvarna" class="btn btn-white btn-outline-white py-3 px-4" target="_blank">GitHub</a>
+							<a href="https://public.tableau.com/app/profile/sumeet.suvarna5030/vizzes" class="btn btn-white btn-outline-white py-3 px-4" target="_blank">Tableau</a></p>
+							<a href="https://drive.google.com/file/d/1hOxs3N2d3DuyEkyZBucFzT1qEPJdvd9m/view?usp=sharing" class="btn btn-primary py-3 px-4" target="_blank">Download CV</a>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+	<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+		<div class="container">
+			<div class="row d-flex align-items-stretch">
+				<div class="col-md-12 pl-lg-5 pb-5">
+					<div class="row justify-content-start pb-3">
+						<div class="col-md-12 heading-section ftco-animate">
+							<h1 class="big">About</h1>
+							<h2 class="mb-4">About Me</h2>
+							<p>I'm a seasoned data engineer and data analyst with 4 years of experience and a passion for transforming industries through data-driven insights. With a strong background in Telecommunication, IT, Manufacturing, and Insurance, I've led initiatives that significantly enhance efficiency and accuracy. Highlights include automating Health Risk Assessment forms, managing billion-record data pipelines, and saving millions in IT costs annually. Certified in Oracle Database SQL and Java SE 8, I specialize in Data Engineering, Data Analysis, Modeling, Warehousing, and Visualization across cloud platforms like Snowflake, Azure, AWS, and databases including SQL Server, Teradata, PostgreSQL, Oracle, and MySQL. Let's collaborate to unlock the full potential of your data.
+							</p>
+							<ul class="about-info mt-4 px-md-0 px-2">
+								<li class="d-flex"><span>Profile:</span> <span>Data Engineer, Data Analytics</span></li>
+								<li class="d-flex"><span>Domain:</span> <span>Healthcare Insurance, Supply Chain, Manufacturing &amp; Telecommunications</span></li>
+								<li class="d-flex"><span>Education:</span> <span>MS in Data Science &amp; B.E in Computer Science</span></li>
+								<li class="d-flex"><span>Language:</span> <span>English, Hindi, Marathi, Tulu</span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+
+	<section class="ftco-section ftco-no-pb" id="experience-section" >
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+			</div>
+			
+			<div class="row">
+				<h1 class="big-4">Experience</h1>
+				<div class="underline"></div>
+			</div>
+			<br>
+			
+			<div class="row">
+				<div class="col-12">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">May 2023 - Dec 2023</span>
+						<h2>Data Services Intern</h2>
+						<div class="position-container">
+							<span class="position"><b>Bloom Insurance</b></span>
+							<img src="images/Bloom-logo.jpeg" alt="USRA Logo" class="company-logo">
+						</div>
+						<p class="mt-4"><b>Domain: HealthCare Insurance</b><br> 
+						Bloom Insurance is a leading provider of innovative health insurance solutions, dedicated to streamlining the claims process and enhancing data-driven decision-making. I collaborated with various insurance clients to manage their IT operations and data effectively, including Electronic Health Record (EHR) system. 
+						</p>
+						<p class="mt-4"> ETL, SSIS, SQL Server, PowerBI (DAX), Python, Excel, SSRS, AWS Glue, Redshift
+							<ul>
+								<li>Developed SSIS package to extract, transform and load data into SQL Server, streamlining the HealthCare Claims (EHR) reporting process and improving efficiency of the process by 30%</li>
+								<li>Automated health risk assessment forms using PL/SQL in stored procedures, reducing manual effort by 2-3 days per cycle. Communicated insights and trends through data visualization, conveying technical concepts to non-technical stakeholders</li>
+								<li>Migrated SSRS reports to Power BI, resulting in 45% performance improvement in data insights. Optimized dashboards using Power BI to enhance 45% performance in data insights</li>
+								<li>Aggregated and transformed insurance data using advanced Excel features like pivot tables and Vlookup for data storytelling.</li>
+							</ul>
+						</p>
+					</div>
+				</div>
+			
+				<div class="col-12">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Dec 2021- July 2022</span>
+						<h2>Consultant Data Engineering and Analytics</h2>
+						<div class="position-container">
+							<span class="position"><b>IndigoChart</b></span>
+							<img src="images/indigochart.jpeg" alt="UHG Logo" class="company-logo">
+						</div>
+						<p class="mt-4"><b>Domain: Manufacturing</b><br>
+						At IndigoChart, the client specialized in manufacturing machinery for the production of semiconductor chips. The data we processed included detailed metrics on machinery performance, production output, and quality control, which were critical for generating insightful analytical reports. my primary objective was to build robust ELT data pipelines to facilitate the creation of comprehensive manufacturing analytical reports. 
+						</p>
+						<p class="mt-4">Technologies:- Snowflake, dbt, Python, Azure DevOps(CI/CD)
+							<ul>
+								<li>Created scalable data pipelines with DBT (Data Build Tool), leveraging Snowflake Cloud Data Warehouse for data ingestion and storage of 10 terabytes of records, significant for manufacturing analytical reports.</li>
+								<li>Implemented data parsing, structuring, and transformation with Pandas in Python, reducing data processing time by 15%.</li>
+							</ul>
+						</p>
+					</div>
+				</div>
+	
+				<div class="col-12">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Nov 2019 - Dec 2021</span>
+						<h2>Associate Data Consultant</h2>
+						<div class="position-container">
+							<span class="position">Atos Syntel</span>
+							<img src="images/atos-syntel.jpeg" alt="Ducat Logo" class="company-logo">
+						</div>
+						<p class="mt-4"><b>Domain: Supply Chain</b><br>
+						At Atos Syntel, the client specialized in Integrated Reporting and Analytical Metrics for Supply Chain Analytics, focusing on providing business stakeholders and management with enhanced insights into supply chain operations, cost efficiencies, inventory management, and supplier performance metrics. This project entailed comprehensive data collection from diverse sources, rigorous data transformation to ensure accuracy and consistency, and loading into SQL Server for streamlined management. I developed insightful visualizations using Power BI and Tableau to empower decision-makers, leading to improvements in supply chain efficiency and supplier relationships, thereby enhancing overall operational performance and customer satisfaction. 
+						</p>
+						<p class="mt-4">Technologies:- ETL, AWS Glue, Redshift, S3, EMR, Azure Data Factory, SQL Server, Tableau
+							<ul>
+								<li>Developed end-to-end data engineering solutions by integrating data from sources(ServiceNow, CRM, ERP, APIs, flat files, and relational databases), centralizing IT infrastructure data and annually saving over $3M through data-driven business decisions.</li>
+								<li>Administered and managed over 40 million records in SQL Server, leveraging a multi-tenant data infrastructure.</li>
+								<li>Designed dashboards using Tableau, accelerating actionable insights and key performance indicators(KPIs) from data by 15% through collaboration with cross-functional teams to drive data-driven decision-making</li>
+								<li>Optimized complex SQL queries through indexing strategies, improving the database performance by 40%-50%.</li>
+							    <li>Championed data-driven culture providing technical support on data analysis, increasing 25% of team proficiency</li>
+							</ul>
+						</p>
+					</div>
+				</div>
+
+				<div class="col-12">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Oct 2018 - Nov 2019</span>
+						<h2>Associate Engineer</h2>
+						<div class="position-container">
+							<span class="position">Atos</span>
+							<img src="images/atos.jpeg" alt="Ducat Logo" class="company-logo">
+						</div>
+						<p class="mt-4"><b>Domain: Telecommunication</b><br>
+						The client, a leading player in telecommunications, undertook the SPOTT Decommission project to migrate their legacy data warehouse, SPOTT, to the new TESS data warehouse while implementing a logical Communication Data Model (CDM). My responsibilities included conducting data profiling using Python to understand the data's structure and quality, followed by developing Informatica ETL workflows to facilitate the data migration process. We focused on creating a layered architecture consisting of staging, history, CDM, dimensional modeling, access, and export layers. I built complex Informatica mappings and workflows using various transformations to handle the intricate business logic. Additionally, I implemented slowly changing dimensions (SCD) to maintain both historical and current data integrity. To ensure the accuracy of the migrated data, I performed root cause analysis on data quality issues using SQL queries in Teradata, resulting in a 30% decrease in defects.
+						</p>
+						<p class="mt-4">Technologies:- ETL, Informatica, Teradata, SQL, Python
+							<ul>
+								<li>Engineered ETL workflows in Informatica for data migration of Legacy Data Warehousing solution to Modern telecommunication data solution; reducing 20% of the migration timeline.</li>
+								<li>Implemented slowly changing dimensions (SCD) methodologies to maintain historical and current data, adhering to data compliance and governance standards supporting business rules, resulting in 20% reduction in data discrepancies.</li>
+								<li>Conducted code reviews for reducing defects by 10% and enhancing data accuracy to ensure end user acceptance.</li>
+								<li>Devised SQL queries in Teradata for UAT and acceptance testing aligned with technical design specifications, with focus on enhancing data quality and achieving 30% reduction in defects</li>
+							</ul>
+						</p>
+					</div>
+				</div>
+			</div>
+			
+			<style>
+				.position-container {
+					display: flex;
+					align-items: center;
+				}
+				.company-logo {
+					width: 90px; /* Adjust size as needed */
+					height: auto;
+					margin-left: 10px; /* Adjust spacing as needed */
+				}
+			</style>
+		</div>
+	</section>
+	
+	
+
+<!--    
+    <section class="ftco-section ftco-no-pb" id="project-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+			</div>
+	
+			<div class="row">
+				<h1 class="big-4">Projects</h1>
+				<div class="underline"></div>
+			</div>
+			<br>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/ShubhangiDabral13/NLP-through-NLTK" class="block-20 zoom-effect" style="background-image: url('images/project11.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/ShubhangiDabral13/NLP-through-NLTK">Graphical Live Twitter Sentiment Analysis with NLTK </a></h3>
+                <p> Executed a Twitter API-based project for real-time data gathering, applying NLP techniques using NLTK library to attain a 90.2% sentiment analysis accuracy, and crafted interactive dashboards with statistical graphs and visualizations to deliver valuable insights.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://geminiproject-haew4vphzspxzlenihp6fn.streamlit.app/ " class="block-20 zoom-effect" style="background-image: url('images/project31.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://geminiproject-haew4vphzspxzlenihp6fn.streamlit.app/ ">Calorie Tracker</a></h3>
+                <p>Built and deployed the Health Analyzer using LangChain and Gemini Pro API, integrating LLM for calorie count and nutrient breakdown
+					from food images. Connected and built APIs to turn these models into a full production system, enhancing healthy food habits.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/ShubhangiDabral13/Gaze_Controlled_Keyboard" class="block-20 zoom-effect" style="background-image: url('images/project21.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/ShubhangiDabral13/Gaze_Controlled_Keyboard">Gaze-Controlled Keyboard</a></h3>
+                <p>Devised a Python and OpenCV Eye Detection project, achieving a 95% accuracy rate in tracking eye movements, while also pioneering
+					AI-powered experiences with a hands-free keyboard control system as an innovative alternative for individuals with quadriplegia.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+		added justify-content-center to center align the last two projects
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/ShubhangiDabral13/AppFusion" class="block-20 zoom-effect" style="background-image: url('images/project41.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/ShubhangiDabral13/AppFusion">AppFusion: Where Apps Align with Your Desires</a></h3>
+				  <p>Designed an app recommendation system utilizing MySQL and Streamlit (Python), implementing CRUD operations, resulting in an
+					innovative, user-centric solution, and fostering user-friendly Apple app store exploration.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/ShubhangiDabral13/Spotify_worldwide_daily_song_ranking_project" class="block-20 zoom-effect" style="background-image: url('images/project51.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/ShubhangiDabral13/Spotify_worldwide_daily_song_ranking_project">Spotify Worldwide Daily Song Analysis</a></h3>
+				  <p>This dataset includes daily rankings of the top 200 songs in 53 countries from 2017 to 2018, covering over 2 million rows from 6629 artists and 18598 songs, totaling 105 billion streams. The project aims to analyze Spotify's regional chart data to uncover trends in music preferences over time across different countries.</p>
+				</div>
+			  </div>
+			</div>
+		 </div>
+	  </div>
+    </section> -->
+
+	<!-- <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+      </div>
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+				<div class="container"> -->
+				<!-- <div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> Github  </span> </h2>
+						<div class="heading"> <h4> I love to solve business problems &amp; uncover hidden data stories </h4>
+						<br>
+						<p><a href="https://github.com/sumeetsuvarna" class="btn btn-primary py-3 px-5">GitHub</a></p>
+						</div>
+					</div>
+				</div>
+			 </div> -->
+		<!-- </div>
+	</section>   -->
+
+	<section class="ftco-section ftco-no-pb" id="education-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+			</div>
+	
+			<div class="row">
+				<h1 class="big-4">Education</h1>
+				<div class="underline"></div>
+			</div>
+			<br>
+	
+			<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2022-2024</span>
+						<h2>MS in Data Science</h2>
+						<span class="position">Indiana University Bloomington</span>
+						<p class="mt-4">Courses: Applied Database Technologies, Data Mining, Intro to Spark, Statistics</p>
+						<p class="mt-4">Assistantship: Graduate Assistant for Data Analysis course. Mentored 60 students in MS Excel, Tableau, MS Access.</p>
+					</div>
+				</div>
+	
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2014-2018</span>
+						<h2>Bachelors of Engineering in Information Technology</h2>
+						<span class="position">University of Mumbai</span>
+						<p class="mt-4">Courses: Intelligent Systems(IS), Data Mining & Business Intelligence, Applied Algorithms</p>
+					</div>
+				</div>
+			</div>
+	
+			<!-- <div class="row justify-content-center mt-5">
+				<div class="col-md-6 text-center ftco-animate">
+					<p><a href="https://drive.google.com/file/d/1SnMdftdQC27V7Js_E49RN1Y0cMk8E4_z/view?usp=drive_link" class="btn btn-primary py-4 px-5" target="_blank">Download CV</a></p>
+				</div>
+			</div> -->
+		</div>
+	</section>
+	<section class="ftco-section ftco-no-pb" id="Skills-and-Expertise">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+			</div>
+	
+			<div class="row">
+				<h1 class="big-4">Skills and Expertise</h1>
+				<div class="underline"></div>
+			</div>
+			<br>
+	
+			<div class="row">
+				<div class="col-12">
+					<h2 class="big-5" style="color: #ffbd39;">Skills</h2>
+					<!-- <h2 class="big-5">Skills</h2> -->
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<div class="skills-container">
+						<div class="btn btn-white btn-outline-white py-3 px-4">Python</div>
+						<div class="btn btn-white btn-outline-white py-3 px-4">SQL</div>
+						<div class="btn btn-white btn-outline-white py-3 px-4">R</div>
+						<div class="btn btn-white btn-outline-white py-3 px-4">Data Warehousing</div>
+						<div class="btn btn-white btn-outline-white py-3 px-4">Machine Learning</div>
+						<div class="btn btn-white btn-outline-white py-3 px-4">Generative AI</div>
+						<div class="btn btn-white btn-outline-white py-3 px-4">A/B Testing</div>
+						<div class="btn btn-white btn-outline-white py-3 px-4">Spark</div>
+						<div class="btn btn-white btn-outline-white py-3 px-4">Airflow</div>
+						<div class="btn btn-white btn-outline-white py-3 px-4">Informatica</div>
+						<div class="btn btn-white btn-outline-white py-3 px-4">Tableau</div>
+						<div class="btn btn-white btn-outline-white py-3 px-4">Power BI</div>
+						<div class="btn btn-white btn-outline-white py-3 px-4">Snowflake</div>
+						<div class="btn btn-white btn-outline-white py-3 px-4">dbt(Data Build Tool)</div>
+						<div class="btn btn-white btn-outline-white py-3 px-4">SQL Server</div>
+						<div class="btn btn-white btn-outline-white py-3 px-4">Teradata</div>
+						<div class="btn btn-white btn-outline-white py-3 px-4">PostgreSQL</div>
+						<div class="btn btn-white btn-outline-white py-3 px-4">Pentaho</div>
+						<div class="btn btn-white btn-outline-white py-3 px-4">Version Control (Git/GitHub)</div>
+						<div class="btn btn-white btn-outline-white py-3 px-4">Unix</div>
+						<div class="btn btn-white btn-outline-white py-3 px-4">MS Excel</div>
+						<div class="btn btn-white btn-outline-white py-3 px-4">Oracle</div>
+						<div class="btn btn-white btn-outline-white py-3 px-4">Azure DevOps(CI/CD)</div>
+						<div class="btn btn-white btn-outline-white py-3 px-4">MS Excel</div>
+						<div class="btn btn-white btn-outline-white py-3 px-4">Jira</div>
+						<div class="btn btn-white btn-outline-white py-3 px-4">AWS</div>
+						<div class="btn btn-white btn-outline-white py-3 px-4">Azure</div>
+					</div>
+				</div>
+			</div>
+			<br>
+	
+			<div class="row">
+				<div class="col-12">
+					<h2 class="big-5" style="color: #ffbd39;">Expertise</h2>
+					<!-- <h2 class="big-5">Expertise</h2> -->
+				</div>
+			</div>
+			<br>
+			<div class="row d-flex">
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a  class="block-20 zoom-effect" style="background-image: url('images/DS.jpg');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+							<h3 class="heading">Data Scientist</h3>
+							<p>As a data scientist, I specialize in using advanced machine learning techniques and statistical methods to uncover actionable insights from complex datasets. In an academic project, I developed an ML-Driven Job Verification and Recommender System using models like Logistic Regression, KNN, Random Forest, and XGBoost, along with NLP techniques. This system aimed to identify false job postings and enhance job search efficiency, achieving a high accuracy rate of 97.32%. It showcases my expertise in applying cutting-edge technologies to solve real-world challenges and enhance user experience.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a class="block-20 zoom-effect" style="background-image: url('images/DE.jpeg');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+							<h3 class="heading">Data Engineer</h3>
+							<p>As a seasoned data engineer, I specialize in designing and optimizing data pipelines to drive business insights and efficiencies. At Bloom Insurance, I streamlined HealthCare Claims reporting with SSIS packages and enhanced insights using Power BI dashboards. At IndigoChart, I developed scalable ELT pipelines in Snowflake and implemented efficient data transformations with Python's Pandas, reducing processing time. At Atos, I managed large-scale data in SQL Server, optimized complex queries, and leveraged Tableau for insightful visualizations, enhancing decision-making and user satisfaction.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry">
+						<a class="block-20 zoom-effect" style="background-image: url('images/DA.jpg');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+							<h3 class="heading">Data Analyst</a></h3>
+							<p>As an experienced data analyst, I specialize in Excel, data visualization, Python, and SQL to drive strategic decisions. At Atos Syntel, I centralized IT infrastructure data, saving over $3M annually. I designed Tableau dashboards that boosted KPI insights by 15%, facilitated data-driven decisions across supply chain disciplines, and forecasted IT costs with Excel, achieving a 10% quarterly savings. I fostered a data-driven culture, enhancing team proficiency by 25%, and excel in transforming data into actionable insights for efficiency and informed decision-making.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br>
+		</div>
+	</section>
+	
+	<style>
+		.skills-container {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 10px;
+		}
+		.btn {
+			margin: 5px;
+			text-align: center;
+		}
+	</style>
+	
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>United States</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="">+ 1 812-543-3877</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:sumeetd.suvarna@gmail.com">sumeetd.suvarna@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Resume</h3>
+	            <p><a href="https://drive.google.com/file/d/1hOxs3N2d3DuyEkyZBucFzT1qEPJdvd9m/view?usp=sharing" target="_blank">Download Resume</a></p>
+	          </div>
+          </div>
+<!-- 
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="https://forms.gle/uLaTShUKXraAvHJ77" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div> -->
+			<!-- </div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/sdabral/"><span class="icon-linkedin"></span></a></li>  
+					  <li class="ftco-animate"><a href="https://x.com/Shubhi_Dabral"><span class="icon-twitter"></span></a></li>
+					  <li class="ftco-animate"><a href="https://public.tableau.com/app/profile/sdabral/vizzes"><span class="icon-tableau"></span></a></li> -->
+				      <!-- <li class="ftco-animate"><a href="https://www.instagram.com/shubhangi.dabral/"><span class="icon-instagram"></span></a></li>
+					</ul>
+				<br>
+		   </div>
+	  -->
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
